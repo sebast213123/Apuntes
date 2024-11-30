@@ -3,10 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MosqueraAnthonny_TareaApuntes.AboutPage"
              Title="AboutPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <StackLayout Padding="20">
+        <Label Text="Tu Nombre"
+               FontSize="24"
+               HorizontalOptions="Center" />
+        <Label Text="Soy un estudiante de Ingeniería de Software..."
+               FontSize="18"
+               HorizontalOptions="Center" />
+        <Image Source="icon_about.png"
+               HeightRequest="100"
+               WidthRequest="100"
+               HorizontalOptions="Center" />
+    </StackLayout>
 </ContentPage>
