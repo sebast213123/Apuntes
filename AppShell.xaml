@@ -4,7 +4,6 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MosqueraAnthonny_TareaApuntes"
-    Shell.FlyoutBehavior="Disabled"
     Title="MosqueraAnthonny_TareaApuntes">
 
     <Shell.FlyoutHeader>
@@ -13,14 +12,18 @@
                HorizontalOptions="Center" />
     </Shell.FlyoutHeader>
 
+   
     <TabBar>
         <ShellContent Title="Inicio" Icon="yo.jpg"
                       ContentTemplate="{DataTemplate local:InicioPage}" />
         <ShellContent Title="Acerca de" Icon="telequinesis.jpg"
-                      ContentTemplate="{DataTemplate local:AboutPage}" />
+                ContentTemplate="{DataTemplate local:AboutPage}" />
         <ShellContent Title="Notas" Icon="perro.jpg"
-                  ContentTemplate="{DataTemplate local:NotasPage}" />
-        <ShellContent Title="VerNotas"  Icon="julien.jpg"
+                      ContentTemplate="{DataTemplate local:NotasPage}" />
+        <ShellContent Title="VerNotas" Icon="julien.jpg"
                       ContentTemplate="{DataTemplate local:VerNotasPage}" />
     </TabBar>
+
+    
+
 </Shell>

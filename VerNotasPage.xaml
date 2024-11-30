@@ -7,10 +7,11 @@
     <VerticalStackLayout Padding="10">
         <Label Text="Listado de Notas Guardadas" FontSize="24" FontAttributes="Bold" />
 
-        <!-- Botón para recargar las notas -->
+      
         <Button Text="Recargar Notas" Clicked="RecargarNotas_Clicked" />
 
         <!-- Lista de notas -->
+        
         <CollectionView ItemsSource="{Binding Notas}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
