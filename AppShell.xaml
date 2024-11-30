@@ -20,7 +20,7 @@
                       ContentTemplate="{DataTemplate local:AboutPage}" />
         <ShellContent Title="Notas" Icon="perro.jpg"
                   ContentTemplate="{DataTemplate local:NotasPage}" />
-        <ShellContent Title="Nueva Nota"  Icon="julien.jpg"
-                      ContentTemplate="{DataTemplate local:NuevaNotaPage}" />
+        <ShellContent Title="VerNotas"  Icon="julien.jpg"
+                      ContentTemplate="{DataTemplate local:VerNotasPage}" />
     </TabBar>
 </Shell>
