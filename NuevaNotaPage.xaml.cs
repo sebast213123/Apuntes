@@ -15,6 +15,7 @@ public partial class NuevaNotaPage : ContentPage
         //si no están marcadas como opcionales o requeridas no se por que pero no funciona asi que vamos a permitir valores null
         public  string? Titulo { get; set; }
         public  string? Contenido { get; set; }
+        public DateTime FechaHora { get; set; } = DateTime.Now;
     }
 
 
@@ -34,7 +35,13 @@ public partial class NuevaNotaPage : ContentPage
 
         if (!string.IsNullOrWhiteSpace(titulo) && !string.IsNullOrWhiteSpace(contenido))
         {
-            App.Notas.Add(new Nota { Titulo = titulo, Contenido = contenido });
+            App.Notas.Add(new Nota
+            {
+                Titulo = titulo,
+                Contenido = contenido,
+                FechaHora = DateTime.Now
+            });
+
             await DisplayAlert("Nota Guardada", "Tu nota ha sido guardada con éxito.", "OK");
             await Navigation.PopAsync();
         }

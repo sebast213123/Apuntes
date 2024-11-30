@@ -6,6 +6,11 @@
 
     <VerticalStackLayout Padding="10">
         <Label Text="Listado de Notas Guardadas" FontSize="24" FontAttributes="Bold" />
+
+        <!-- Botón para recargar las notas -->
+        <Button Text="Recargar Notas" Clicked="RecargarNotas_Clicked" />
+
+        <!-- Lista de notas -->
         <CollectionView ItemsSource="{Binding Notas}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
@@ -13,6 +18,7 @@
                         <VerticalStackLayout>
                             <Label Text="{Binding Titulo}" FontSize="18" FontAttributes="Bold" />
                             <Label Text="{Binding Contenido}" FontSize="14" />
+                            <Label Text="{Binding FechaHora, StringFormat='Creada el {0:dd/MM/yyyy} a las {0:HH:mm}'}" FontSize="12" TextColor="Gray" />
                         </VerticalStackLayout>
                     </Frame>
                 </DataTemplate>
