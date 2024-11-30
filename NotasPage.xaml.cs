@@ -8,15 +8,17 @@ public partial class NotasPage : ContentPage
 	{
 		InitializeComponent();
         BindingContext = this;
+		Notas = App.Notas;
     }
 
+    public List<NuevaNotaPage.Nota> Notas { get; set; }
 
-	public List<Nota> Notas => App.Notas;
 
-private async void AgregarNota_Clicked(object sender, EventArgs e)
-{
-    await Navigation.PushAsync(new NuevaNotaPage());
-}
+    private async void AgregarNota_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new NuevaNotaPage());
+    }
+
 
 
 }

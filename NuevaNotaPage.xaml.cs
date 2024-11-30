@@ -19,7 +19,7 @@ public partial class NuevaNotaPage : ContentPage
 
 
 
-    public static List<Nota> Notas { get; set; } = new List<Nota>();
+   
 
 
 
