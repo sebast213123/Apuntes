@@ -5,24 +5,21 @@ public partial class VerNotasPage : ContentPage
     public VerNotasPage()
     {
         InitializeComponent();
-
-        // asignamos el contexto de datos a la lista de notas con el blindingcontext
-        BindingContext = this;
-
-        Notas = App.Notas.OrderBy(n => n.FechaHora).ToList(); // se vincula con la lista de notas ya existente y se ordena por fecha
-        
+        CargarNotas();
     }
 
     public List<NuevaNotaPage.Nota> Notas { get; set; }
 
-
-
-
-
-    private void RecargarNotas_Clicked(object sender, EventArgs e)
+    private async Task CargarNotas()
     {
-        Notas = App.Notas.OrderBy(n => n.FechaHora).ToList();
-        BindingContext = null; // pa reiniciar
+        Notas = await App.Database.ObtenerNotasAsync();
+        BindingContext = null; // Reinicia el contexto para refrescar la UI
         BindingContext = this;
     }
+
+    private async void RecargarNotas_Clicked(object sender, EventArgs e)
+    {
+        await CargarNotas();
+    }
 }
+

@@ -23,7 +23,7 @@ public partial class NuevaNotaPage : ContentPage
 
 
 
-   
+
 
 
 
@@ -38,12 +38,14 @@ public partial class NuevaNotaPage : ContentPage
 
         if (!string.IsNullOrWhiteSpace(titulo) && !string.IsNullOrWhiteSpace(contenido))
         {
-            App.Notas.Add(new Nota
+            var nuevaNota = new Nota
             {
                 Titulo = titulo,
                 Contenido = contenido,
                 FechaHora = DateTime.Now
-            });
+            };
+
+            await App.Database.GuardarNotaAsync(nuevaNota);
 
             await DisplayAlert("Nota Guardada", "Tu nota ha sido guardada con éxito.", "OK");
             await Navigation.PopAsync();
