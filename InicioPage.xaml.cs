@@ -1,8 +1,8 @@
 namespace MosqueraAnthonny_TareaApuntes;
 
-public partial class AboutPage : ContentPage
+public partial class InicioPage : ContentPage
 {
-	public AboutPage()
+	public InicioPage()
 	{
 		InitializeComponent();
 	}
