@@ -29,8 +29,8 @@ public partial class NuevaNotaPage : ContentPage
 
     private async void GuardarNota_Clicked(object sender, EventArgs e)
     {
-        string titulo = TituloEntry.Text;
-        string contenido = ContenidoEditor.Text;
+        string titulo = TituloNota.Text;
+        string contenido = ContenidoNota.Text;
 
         if (!string.IsNullOrWhiteSpace(titulo) && !string.IsNullOrWhiteSpace(contenido))
         {

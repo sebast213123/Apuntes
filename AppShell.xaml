@@ -21,6 +21,6 @@
         <ShellContent Title="Notas" Icon="perro.jpg"
                   ContentTemplate="{DataTemplate local:NotasPage}" />
         <ShellContent Title="Nueva Nota"  Icon="julien.jpg"
-                      ContentTemplate="{DataTemplate MosqueraAnthonny_TareaApuntes.NuevaNotaPage}" />
+                      ContentTemplate="{DataTemplate local:NuevaNotaPage}" />
     </TabBar>
 </Shell>
