@@ -1,4 +1,5 @@
-﻿namespace MosqueraAnthonny_TareaApuntes
+﻿
+namespace MosqueraAnthonny_TareaApuntes
 {
     public partial class App : Application
     {
@@ -7,6 +8,10 @@
             InitializeComponent();
 
             MainPage = new AppShell();
+
         }
+
+        public static List<NuevaNotaPage.Nota> Notas { get; internal set; }
     }
+
 }

@@ -18,7 +18,7 @@
                       ContentTemplate="{DataTemplate local:InicioPage}" />
         <ShellContent Title="Acerca de" Icon="telequinesis.jpg"
                       ContentTemplate="{DataTemplate local:AboutPage}" />
-        <ShellContent Title="Acerca de" Icon="perro.jpg"
+        <ShellContent Title="Notas" Icon="perro.jpg"
                   ContentTemplate="{DataTemplate local:NotasPage}" />
     </TabBar>
 </Shell>
