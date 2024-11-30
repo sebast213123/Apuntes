@@ -57,10 +57,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\gato.jpg" />
 	  <None Remove="Resources\Images\icon_about.png" />
 	  <None Remove="Resources\Images\icon_about_ios.png" />
 	  <None Remove="Resources\Images\icon_notes.png" />
 	  <None Remove="Resources\Images\icon_notes_ios.png" />
+	  <None Remove="Resources\Images\julien.jpg" />
+	  <None Remove="Resources\Images\marin.jpg" />
+	  <None Remove="Resources\Images\perro.jpg" />
+	  <None Remove="Resources\Images\telequinesis.jpg" />
+	  <None Remove="Resources\Images\yo.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -74,6 +80,12 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="InicioPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="NotasPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="NuevaNotaPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

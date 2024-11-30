@@ -14,9 +14,11 @@
     </Shell.FlyoutHeader>
 
     <TabBar>
-        <ShellContent Title="Inicio" Icon="home.png"
+        <ShellContent Title="Inicio" Icon="yo.jpg"
                       ContentTemplate="{DataTemplate local:InicioPage}" />
-        <ShellContent Title="Acerca de" Icon="about.png"
+        <ShellContent Title="Acerca de" Icon="telequinesis.jpg"
                       ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Acerca de" Icon="perro.jpg"
+                  ContentTemplate="{DataTemplate local:NotasPage}" />
     </TabBar>
 </Shell>

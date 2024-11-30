@@ -4,7 +4,7 @@
              x:Class="MosqueraAnthonny_TareaApuntes.AboutPage"
              Title="AboutPage">
     <StackLayout Padding="20">
-        <Label Text="Tu Nombre"
+        <Label Text="Anthonny Mosquera"
                FontSize="24"
                HorizontalOptions="Center" />
         <Label Text="Soy un estudiante de Ingeniería de Software..."
