@@ -14,13 +14,13 @@
 
    
     <TabBar>
-        <ShellContent Title="Inicio" Icon="yo.jpg"
+        <ShellContent Title="Inicio" Icon="inicio.png"
                       ContentTemplate="{DataTemplate local:InicioPage}" />
-        <ShellContent Title="Acerca de" Icon="telequinesis.jpg"
+        <ShellContent Title="Acerca de" Icon="icon_about.png"
                 ContentTemplate="{DataTemplate local:AboutPage}" />
-        <ShellContent Title="Notas" Icon="perro.jpg"
+        <ShellContent Title="Notas" Icon="icon_notes.png"
                       ContentTemplate="{DataTemplate local:NotasPage}" />
-        <ShellContent Title="VerNotas" Icon="julien.jpg"
+        <ShellContent Title="VerNotas" Icon="view.png"
                       ContentTemplate="{DataTemplate local:VerNotasPage}" />
     </TabBar>
 

@@ -57,16 +57,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\gato.jpg" />
+	  <None Remove="Resources\Images\gato.png" />
 	  <None Remove="Resources\Images\icon_about.png" />
 	  <None Remove="Resources\Images\icon_about_ios.png" />
 	  <None Remove="Resources\Images\icon_notes.png" />
 	  <None Remove="Resources\Images\icon_notes_ios.png" />
-	  <None Remove="Resources\Images\julien.jpg" />
-	  <None Remove="Resources\Images\marin.jpg" />
-	  <None Remove="Resources\Images\perro.jpg" />
-	  <None Remove="Resources\Images\telequinesis.jpg" />
-	  <None Remove="Resources\Images\yo.jpg" />
+	  <None Remove="Resources\Images\inicio.png" />
+	  <None Remove="Resources\Images\julien.png" />
+	  <None Remove="Resources\Images\marin.png" />
+	  <None Remove="Resources\Images\perro.png" />
+	  <None Remove="Resources\Images\telequinesis.png" />
+	  <None Remove="Resources\Images\view.jpg" />
+	  <None Remove="Resources\Images\yo.png" />
 	</ItemGroup>
 
 	<ItemGroup>

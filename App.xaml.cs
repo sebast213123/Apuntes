@@ -3,7 +3,7 @@ namespace MosqueraAnthonny_TareaApuntes
 {
     public partial class App : Application
     {
-        public static List<NuevaNotaPage.Nota> Notas { get; internal set; } //tal vez esta linea sea necesario borrar despues
+       
         public static BaseDeDatos Database { get; private set; }
 
         public App()
@@ -13,8 +13,7 @@ namespace MosqueraAnthonny_TareaApuntes
             string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "notas.db3");
             Database = new BaseDeDatos(dbPath);
 
-            // Inicializar la lista de notas para evitar que se inicialice en automatico y provoque errores
-            Notas = new List<NuevaNotaPage.Nota>(); //creo que esta tambien habrá que borrar después
+          
         }
     }
 

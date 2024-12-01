@@ -10,7 +10,7 @@
         <Label Text="Soy un estudiante de Ingeniería de Software..."
                FontSize="18"
                HorizontalOptions="Center" />
-        <Image Source="icon_about.png"
+        <Image Source="yo.png"
                HeightRequest="100"
                WidthRequest="100"
                HorizontalOptions="Center" />
