@@ -2,12 +2,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MosqueraAnthonny_TareaApuntes.AboutPage"
-             Title="AboutPage">
+             Title="Diario">
     <StackLayout Padding="20">
-        <Label Text="Anthonny Mosquera"
+        <Label Text="Nuestro Proyecto"
                FontSize="24"
                HorizontalOptions="Center" />
-        <Label Text="Soy un estudiante de Ingeniería de Software..."
+        <Label Text="Este es tu diario personal , usalo para plasmar tus ideas sin perderlas , se creativo y diviertete!"
                FontSize="18"
                HorizontalOptions="Center" />
         <Image Source="yo.png"
